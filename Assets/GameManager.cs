@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public int highScore;
     public TMP_Text scoreText;
     public TMP_Text highScoreText;
-
+    
 
     private void Start()
     {
@@ -42,5 +42,8 @@ public class GameManager : MonoBehaviour
         score = 0;
         scoreText.text = "Score: " + score;
     }
-   
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
